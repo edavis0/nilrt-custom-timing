@@ -1,14 +1,10 @@
 # nilrt-custom-timing
 
 ## Overview
-<p>This repository contains an example program that demonstrates the timing performance of a thread given real-time priority to a thread given standard priority. Additionally, the core affinity of the RT thread is set in the program. The RT thread functionality is primarily achieved by utilizing the pthread.h and mman.h header files. The custom_timing_lib .c and .h files were built based on Srikanta's [post][1] in QnA Plus.
-  
- 
-
-</p>
+This repository contains an example program that demonstrates the timing performance of a thread given real-time priority to a thread given standard priority. Additionally, the core affinity of the RT thread is set in the program. The RT thread functionality is primarily achieved by utilizing the pthread.h and mman.h header files. The custom_timing_lib .c and .h files were built based on Srikanta's [post][1] in QnA Plus.
 
 ## Code Output
-<p>When executed, the program displays the input parameters, performance of the RT thread, and performance of the standard priority thread.</p>
+When executed, the program displays the input parameters, performance of the RT thread, and performance of the standard priority thread.
   
 ![Console output](https://github.com/edavis0/nilrt-custom-timing/blob/main/ConsoleOutImage.png)
 
