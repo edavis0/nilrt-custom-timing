@@ -11,9 +11,7 @@
             ],
             "includePath": [
                 "${workspaceFolder}/**",
-                "${compilerSysroots}/core2-64-nilrt-linux/usr/include",
-                "C:/Program Files (x86)/National Instruments/NI-DAQ/DAQmx ANSI C Dev/include",
-                "C:/Program Files (x86)/National Instruments/NI-DAQ/DAQmx ANSI C Dev/lib/msvc"
+                "${compilerSysroots}/core2-64-nilrt-linux/usr/include"
             ],
             "cStandard": "c17",
             "cppStandard": "c++17",
