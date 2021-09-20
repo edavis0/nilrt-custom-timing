@@ -1,0 +1,14 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "stddef.h": "c",
+        "limits": "c",
+        "array": "c",
+        "bitset": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "custom_timing.h": "c",
+        "limits.h": "c"
+    }
+}
