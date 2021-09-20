@@ -25,8 +25,6 @@ const int policyRT = SCHED_FIFO; // Sets the scheduling policy attribute of the 
 const int cpuRT = 1; // Sets the CPU core affinity for the RT enabled thread. In a 2 core cRIO the options are 0 and 1
 const double cycleTime = 500; // Cycle time in Hz
 const int runSec = 15; // Sets the time window for the loops to be run within
-const double upperLimit = 1.1; // Sets the upper limit of the cycle time to evaluate the maximum time
-const double lowerLimit = 0.9; // Sets the lower limit of the cycle time to evaluate the minimum time
 
 // Initialize global variables
 char 		errBuff[2048] = { '\0' };
@@ -123,8 +121,6 @@ void time_handler1(size_t timer_id, void* callbackData) {
 	struct 		timespec currentTime, tempTimeUsed;
 	double 		timeUsed;
 	double		expectedTimePerLoop = 1/cycleTime*1000;
-	double 		upperInterval = upperLimit*expectedTimePerLoop;
-	double 		lowerInterval = lowerLimit*expectedTimePerLoop;
 
 	// Get current value of clock CLOCK_MONOTONIC and stores it in currentTime
 	clock_gettime(CLOCK_MONOTONIC, &currentTime);
